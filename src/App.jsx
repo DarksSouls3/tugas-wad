@@ -1,37 +1,50 @@
 
+import './App.css'
+
 function App() {
   return (
-    <main className="min-h-screen bg-slate-950 flex items-center justify-center p-6">
-      <div className="w-full max-w-md rounded-2xl bg-white p-8 shadow-2xl">
+    <main className="container">
 
-        <span className="rounded-full bg-green-100 px-3 py-1 text-sm font-semibold text-green-700">
-          Tailwind Connected!
-        </span>
+      <nav className="navbar">
+        <h2 className="logo">PANJI.</h2>
 
-        <h1 className="mt-6 text-4xl font-bold tracking-tight text-slate-900">
-          Hello, Panji!
+        <div className="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+        </div>
+      </nav>
+
+      <section className="hero" id="home">
+        <p className="subtitle">WELCOME TO MY WEBSITE</p>
+
+        <h1>
+          Hello, I'm <span>Panji.</span>
         </h1>
 
-        <p className="mt-3 text-slate-600">
-          React and Tailwind CSS are working together.
+        <p className="description">
+          Musician, Creative Thinker, and Developer.
+          Currently learning React and Tailwind CSS.
         </p>
 
-        <button className="mt-6 w-full rounded-xl bg-indigo-600 px-5 py-3 font-semibold text-white transition hover:bg-indigo-700 active:scale-95">
-          Test Button
+        <button className="hero-button">
+          Explore My Work
         </button>
+      </section>
 
-        <div className="mt-6 rounded-xl border border-slate-200 p-4">
-          <p className="text-sm font-medium text-slate-500">
-            Current Stack
-          </p>
-          <p className="mt-2 font-bold text-slate-800">
-            React + Vite + Tailwind CSS v4
-          </p>
-        </div>
+      <section className="about" id="about">
+        <h2>About Me</h2>
+        <p>
+          I love music, technology, and creating things.
+        </p>
+      </section>
 
-      </div>
+      <footer>
+        <p>© 2026 Panji. Built with React.</p>
+      </footer>
+
     </main>
-  );
+  )
 }
 
-export default App;
+export default App
